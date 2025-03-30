@@ -32,6 +32,7 @@ userRouter.get("/:id", async (req, res, next) => {
     .getById(req.params.id as unknown as number)
     .then((users) => res.json(users))
     .catch(next);
+
 });
 
 // POST /api/users
@@ -41,3 +42,4 @@ userRouter.post("/", async (req, res, next) => {
     .then(() => res.json({ message: "User created" }))
     .catch(next);
 });
+

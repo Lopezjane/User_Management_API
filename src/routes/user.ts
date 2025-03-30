@@ -42,4 +42,4 @@ userRouter.post("/", async (req, res, next) => {
     .then(() => res.json({ message: "User created" }))
     .catch(next);
 });
-
+})

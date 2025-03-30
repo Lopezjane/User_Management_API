@@ -1,0 +1,32 @@
+{
+  "name": "user_management_api",
+  "version": "1.0.0",
+  "description": "This project is a RESTful API built for managing user data using standard CRUD operations — Create, Read, Update, and Delete.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lopezjane/User_Management_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lopezjane/User_Management_API/issues"
+  },
+  "homepage": "https://github.com/Lopezjane/User_Management_API#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.14.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.21"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/joi": "^17.2.3",
+    "@types/node": "^22.13.14"
+  }
+}

@@ -18,3 +18,19 @@ userRouter.put("/:id", async (req, res, next) => {
 
     .catch(next);
 });
+
+// LISTING  /api/users
+userRouter.get("/", async (req, res, next) => {
+  userService
+    .getAll()
+    .then((users) => res.json(users))
+    .catch(next);
+});
+
+// RETRIEVAL /api/users/:id
+userRouter.get("/:id", async (req, res, next) => {
+  userService
+    .getById(req.params.id as unknown as number)
+    .then((users) => res.json(users))
+    .catch(next);
+});
